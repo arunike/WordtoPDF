@@ -1,12 +1,20 @@
-import os
+## Libraries
 import win32com.client
 
 wdFormatPDF = 17
 
-inputFile = os.path.abspath(r"") #Inputfile absolute location path
-outputFile = os.path.abspath(r"") #Outputfile absolute location path
+## User inputs
+print("Enter a input file location: ")
+inputFile = input()
+
+print("Enter a output file location: ")
+outputFile = input()
+
+## Convert Word to PDF
 word = win32com.client.Dispatch('Word.Application')
 doc = word.Documents.Open(inputFile)
 doc.SaveAs(outputFile, FileFormat=wdFormatPDF)
 doc.Close()
 word.Quit()
+
+print("Conversion completed!")
