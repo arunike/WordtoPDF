@@ -5,10 +5,10 @@ wdFormatPDF = 17
 
 ## User inputs
 print("Enter a input file location: ")
-inputFile = input()
+inputFile = input() + ".docx"
 
 print("Enter a output file location: ")
-outputFile = input()
+outputFile = input() + ".pdf"
 
 ## Convert Word to PDF
 word = win32com.client.Dispatch('Word.Application')
