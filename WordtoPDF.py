@@ -4,10 +4,10 @@ import win32com.client
 wdFormatPDF = 17
 
 ## User inputs
-print("Enter a input file location: ")
+print("Enter a input file location: ", end = "")
 inputFile = input() + ".docx"
 
-print("Enter a output file location: ")
+print("Enter a output file location: ", end = "")
 outputFile = input() + ".pdf"
 
 ## Convert Word to PDF
