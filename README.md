@@ -1,5 +1,6 @@
 # WordtoPDF
 
+## Description
 <p> A Python program that allows the user convert word document into PDFs.
   User is first prompted to input, where they could enter the exact location of word document.
   Then, user can enter the exact output location of the file and conversion will begin.
